@@ -1,37 +1,24 @@
-#create virtual environment
+# Create virtual environment
+python -m venv venv
 
-##python -m venv venv
-
-
-###activate virtual environment
-
-####for windows
+# Activate virtual environment
+## For windows
 .\venv\Scripts\activate.bat
 
-for linux
+## For ubuntu
 source ./venv/bin/activate
 
-
-install dependencies
-
+# Install requirements
 pip install -r requirements.txt
 
-
-create database file
-
+# Create database file
 flask db_create
 
-
-seed database
-
+# Seed database
 flask db_seed
 
-
-to drop database use 
-
+# To drop the database, use 
 flask db_drop
 
-
-run
-
+# Run
 flask run
